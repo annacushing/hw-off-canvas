@@ -1,0 +1,28 @@
+/* =============
+    Hero
+============= */
+
+#hero{
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    height: 607px;
+
+
+    @include sm{
+        height: 500px;
+    }
+
+    @include md{
+        height: 540px;
+    }
+
+    @include lg{
+        height: 580px;
+    }
+
+    @include xl{
+        background-position: center -200px;
+        height: 657px;
+    }
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8692d91ea3.js"></script>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Off Canvas Navigation Template</title>
+</head>
+
+<body>
+
+    <!-- Your options for data-navigation-position is: left | right -->
+    <!-- Your options for data-navigation-slide is: over | under | push -->
+    <section id="off-canvas-container" data-navigation-position="left" data-navigation-slide="push">
+        <div>
+            <button>
+                <i class="far fa-times-circle" id="close-btn"></i>
+            </button>
+            <div id="nav-container">
+                <nav data-nav="main-navigation">
+
+
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><img src="img/search-icon.svg" alt="Search Icon"></i></button>
+
+                    </form>
+
+
+                    <ul>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- burger icon -->
+    <!-- The burger icon needs to be outside of the main tag if you are going to position fix it. -->
+    <button id="burger-icon" data-fixed="fixed-item">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!--
+    *************** Your website content goes here! ***************
+    -->
+    <main>
+
+        <!-- overlay for the view when the menu is visible. Please don't move -->
+        <div class="js-off-canvas-overlay" id="overlay"></div>
+        <!-- overlay for the view when the menu is visible. Please don't move -->
+
+        <!-- Your Content -->
+        <section id="hero"></section>
+
+        <section id="info">
+            <h1>Off-Canvas Menu</h1>
+            <p>Off-canvas layouts are common and useful for mobile and desktop layouts. Be a navigation guru with our Foundation online webinar training. You’ll learn techniques for creating responsive navigations that work with any type of site. In
+                addition to that you can learn tips and tricks and best practices for all of Foundation’s components.</p>
+        </section>
+
+        <section id="gallery">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!-- End Your Content -->
+    </main>
+    <!--
+    *************** End of Website content! ***************
+    -->
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

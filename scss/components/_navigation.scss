@@ -1,0 +1,156 @@
+/* =============
+    Navigation
+============= */
+a:hover,
+a:link {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#off-canvas-container {
+    /* -------------
+        Here are the properties you can changes for the off-canvas navigation-slide
+    ------------- */
+    background-color: $forest;
+
+    grid-template-columns: 0 auto 0;
+    height: 100%;
+    // padding-top: 20px;
+    // width of the off canvas navigation
+    width: 341px;
+    div{
+        margin-left: 16px;
+    }
+
+    /* close btn */
+    button {
+        background-color: transparent;
+        border: $white;
+        color: $white;
+        cursor: pointer;
+        font-size: rem-calc(26);
+        height: 28px;
+        margin-bottom: 14px;
+        padding-right: 24px;
+        text-align: right;
+        width: 28px;
+        width: 100%;
+    }
+    /* close btn */
+    button:hover {
+        color: $orange;
+    }
+
+
+    // nav items
+    ul:nth-child(2) {
+        li {
+            margin-right: 16px;
+
+            a:link,
+            a:visited {
+                border-bottom: 2px solid $leaf;
+                color: $white;
+                display: block;
+                font-family: 'Open Sans', sans-serif;
+                font-size: rem-calc(30);
+                font-weight: 700;
+                padding: 16px 16px 16px 0;
+                text-align: right;
+                width: 100%;
+            }
+
+            a:active,
+            a:hover {
+                background-color: $orange;
+                color: $black;
+                width: 100%;
+            }
+        }
+    }
+
+    // social media icons
+    ul:nth-child(3){
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 16px;
+        li{
+            padding-top: 16px;
+            i{
+                color: $white;
+                font-size: rem-calc(30);
+            }
+        }
+
+        li:nth-child(1){
+            padding-right: 40px;
+        }
+        li:nth-child(3){
+            padding-left: 40px;
+        }
+
+        a:active,
+        a:hover {
+            color: $orange;
+        }
+    }
+
+// search field
+    form {
+        display: flex;
+        width: 100%;
+        // search field
+        input[type=text] {
+            background-color: $olive;
+            border: none;
+            color: $black;
+            font-family: 'Open Sans', sans-serif;
+            font-size: rem-calc(24);
+            font-weight: 400;
+            height: 49px;
+            outline: none;
+            padding: 0 10px;
+            width: 75%;
+        }
+
+        button {
+            background-color: $orange;
+            border: none;
+            /* Prevent double borders */
+            cursor: pointer;
+            height: 49px;
+            margin: 0 auto;
+            padding: 0 25px;
+            width: 25%;
+        }
+
+        button:hover {
+            background: $leaf;
+        }
+    }
+}
+
+#burger-icon {
+    background-color: $orange;
+    border: 2px solid $black;
+    border-radius: 50%;
+    height: 46px;
+    left: 15px;
+    outline: none;
+    padding: 8px;
+    position: fixed;
+    top: 12px;
+    width: 46px;
+    z-index: 100;
+
+    i {
+        color: $white;
+        font-size: rem-calc(24);
+    }
+}
+
+#burger-icon:hover {
+    background-color: $black;
+    border: 2px solid $orange;
+    color: $white;
+}
